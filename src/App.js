@@ -1,12 +1,13 @@
 import React from "react";
 import "./styles.css";
+import { Card } from "./components/Card/Card";
 
 export default function App() {
   const titulo = "Título do vídeo";
 
-  function reproduzVideo() {
-    alert("O vídeo está sendo reproduzido");
-  }
+  // function reproduzVideo() {
+  //   alert("O vídeo está sendo reproduzido");
+  // }
   return (
     <div>
       <div className="tela-inteira">
@@ -28,10 +29,46 @@ export default function App() {
           </nav>
 
           <section className="painel-de-videos">
-            <div className="box-pagina-principal" onClick={reproduzVideo}>
+            <Card 
+            src="https://picsum.photos/400/400?a=1" 
+            title="Titulo do video"          
+            />
+            
+            <Card 
+            src="https://picsum.photos/400/400?a=2" 
+            title="Titulo do video"            
+            />
+            <Card 
+            src="https://picsum.photos/400/400?a=3" 
+            title="Titulo do video"            
+            />
+            <Card 
+            src="https://picsum.photos/400/400?a=4" 
+            title="Titulo do video"            
+            />
+            <Card 
+            src="https://picsum.photos/400/400?a=5" 
+            title="Titulo do video"            
+            />
+            <Card 
+            src="https://picsum.photos/400/400?a=6" 
+            title="Titulo do video"            
+            />
+            <Card 
+            src="https://picsum.photos/400/400?a=7" 
+            title="Titulo do video"            
+            />
+            <Card 
+            src="https://picsum.photos/400/400?a=8" 
+            title="Titulo do video"            
+            />
+            
+            
+            {/* <div className="box-pagina-principal" onClick={reproduzVideo}>
               <img src="https://picsum.photos/400/400?a=1 " alt="" />
               <h4>{titulo}</h4>
-            </div>
+            </div> */}
+{/*             
             <div className="box-pagina-principal" onClick={reproduzVideo}>
               <img src="https://picsum.photos/400/400?a=2 " alt="" />
               <h4>{titulo}</h4>
@@ -59,7 +96,7 @@ export default function App() {
             <div className="box-pagina-principal" onClick={reproduzVideo}>
               <img src="https://picsum.photos/400/400?a=8 " alt="" />
               <h4>{titulo}</h4>
-            </div>
+            </div> */} 
           </section>
         </main>
 
