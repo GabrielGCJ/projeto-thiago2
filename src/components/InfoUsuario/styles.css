@@ -4,6 +4,8 @@
     height: 8rem;
     border: 0.5rem solid rgb(255, 165, 0);
     border-radius: 0.5rem;
+
+    outline: 0.1rem solid black;
 }
 
 .info-usuario {
